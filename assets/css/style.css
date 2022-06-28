@@ -82,6 +82,7 @@ a:hover {
 .avatar-new {
   width: 120px;
   height: 120px;
+  border-radius: 60px;
   margin-right: 4px;
   overflow: hidden;
 }
