@@ -79,6 +79,13 @@ a:hover {
   overflow: hidden;
 }
 
+.avatar-new {
+  width: 120px;
+  height: 120px;
+  margin-right: 4px;
+  overflow: hidden;
+}
+
 .bg-image {
   background-repeat: no-repeat;
   background-attachment: fixed;
