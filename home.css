@@ -877,68 +877,11 @@
   text-decoration: none;
 }
 
-.home-text010 {
-  top: 3420px;
-  left: 572px;
-  height: auto;
-  position: absolute;
-  align-self: auto;
-  text-align: center;
-  line-height: normal;
-  margin-right: 0;
-  margin-bottom: 0;
-}
 
-.home-group11 {
-  top: 3524px;
-  left: 322px;
-  width: 796px;
-  height: 76px;
-  display: flex;
-  padding: 0;
-  position: absolute;
-  align-self: auto;
-  box-sizing: border-box;
-  align-items: flex-start;
-  flex-shrink: 1;
-  border-color: transparent;
-  border-style: none;
-  border-width: 0;
-  margin-right: 0;
-  border-radius: 0px 0px 0px 0px;
-  margin-bottom: 0;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: transparent;
-}
 
-.home-frame18 {
-  top: 0px;
-  left: 0px;
-  display: flex;
-  position: absolute;
-  box-sizing: border-box;
-  align-items: center;
-  border-color: transparent;
-  border-radius: 0px 0px 0px 0px;
-  flex-direction: column;
-}
 
-.home-text012 {
-  color: var(--dl-color-default-primaryyellow);
-  height: auto;
-  font-size: 40px;
-  align-self: auto;
-  font-style: Bold;
-  text-align: left;
-  font-family: Inter;
-  font-weight: 700;
-  line-height: normal;
-  font-stretch: normal;
-  margin-right: 0;
-  margin-bottom: 4px;
-  text-decoration: none;
-}
+
+
 
 .home-text014 {
   height: auto;
@@ -1789,6 +1732,55 @@
   color: var(--dl-color-default-darkblue);
 }
 
+
+.container-values {
+  width: 80%;
+  height: 200px;
+  margin-top: 13%;
+  margin-left: 10%;
+}
+
+.text-values-title {
+  height: auto;
+  align-self: auto;
+  text-align: center;
+  line-height: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.container-values-real {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 48px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.container-values-item {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-values-item-title {
+  color: var(--dl-color-default-primaryyellow);
+  height: auto;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 4px;
+  text-decoration: none;
+}
 
 /* end work style */
 
