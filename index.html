@@ -1,753 +1,528 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="english">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>AT Group</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
 
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-gray-black);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    data-tag="font" />
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <link href="./style.css" rel="stylesheet" />
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: DevFolio - v4.7.1
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="./home.css" rel="stylesheet" />
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html">AT Group</a></h1>
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="public/playground_assets/logo.svg" class="home-a-t-group" />
+        </a>
+      </h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto " href="#work">Work</a></li>
-          <!-- <li><a class="nav-link scrollto " href="#blog">Blog</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
+      <!-- .navbar -->
 
+      <button class="button-get-in-touch">
+        <span class="text-get-in-touch"><span>Get in Touch</span></span>
+      </button>
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.png)">
+  <div id="hero" class="hero route bg-image" style="background-image: url(public/playground_assets/background-top.png)">
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">We're AT Group</h1>
-          <p class="hero-subtitle">
-            <span class="typed" data-typed-items="Developer, Freelancer, Mobile applications">
+          <div class="top-content">
+            <span class="top-title headerH1•Bold">
+              <span>Boost Your Software</span>
+              <br />
+              <span>Develop with Passion</span>
             </span>
-          </p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+            <span class="top-subtitle">
+              We are a trusted partner of many startups in helping them
+              successfully launch apps to the top of the market.
+            </span>
+          </div>
+          <div class="image-square">
+            <img src="public/playground_assets/square.png" />
+          </div>
         </div>
       </div>
     </div>
   </div>
   <!-- End Hero Section -->
 
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-4">
-                  <img src="assets/img/logo-group.png" class="img-fluid rounded b-shadow-a" alt="">
-                </div>
-                <div class="col-md-8">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About us
-                      </h5>
-                    </div>
-                    <p class="lead">
-                      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan
-                      id
-                      imperdiet et, porttitor
-                      at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
-                      porttitor accumsan tincidunt.
-                    </p>
-                    <p class="lead">
-                      Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
-                      porttitor volutpat. Vestibulum
-                      ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
-                    </p>
-                    <p class="lead">
-                      Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                      Nulla porttitor accumsan
-                      tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services-mf pt-5 route">
+    <div class="top-container-services">
+      <span class="text-services-title headerH2•Bold">Services</span>
+      <span class="text-services-subtitle bodyM•Regular">
+        Discovering our fields of expertise that we’ve worked hard to
+        build. Experience best services in town.
+      </span>
+    </div>
+    <div class="bottom-container-services">
+      <div class="card-project">
+        <img src="public/playground_assets/camera-iphone-13-promax.png" class="image-project" />
+        <img src="public/playground_assets/bg-services.png" alt="Rectangle311132" class="image-bg-project" />
+        <span class="text-project headerH3•Bold">
+          <span>Mobile</span>
+          <br />
+          <span>Apps Development</span>
+        </span>
       </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Services
-              </h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Mobile Apps Development</h2>
-                <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Crypto Currencies Wallets Apps Development</h2>
-                <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Web Development</h2>
-                <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="card-project">
+        <img src="public/playground_assets/keyboard.png" alt="Rectangle321134" class="image-project" />
+        <img src="public/playground_assets/bg-services.png" alt="Rectangle331135" class="image-bg-project" />
+        <span class="text-project headerH3•Bold">
+          <span>Web Development</span>
+        </span>
       </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-check"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">WORKS COMPLETED</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">TOTAL CLIENTS</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-award"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">AWARD WON</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Counter Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Portfolio
-              </h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-1.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Lorem impsum dolor</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Bindo Laro Cado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Big Bang</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-
-            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/tuan-nguyen.jpeg" alt="" class="avatar-new">
-                      <span class="author">Tuan Nguyen</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Head of Engineering at AT Group
-                      </p>
-                      <p class="description lead">
-                        Technical Lead at KMS Technology
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/hung-nguyen.jpg" alt="" class="avatar-new">
-                      <span class="author">Hung Nguyen</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        React Native Lead at Brickmate VietNam
-                      </p>
-                      <p class="description lead">
-                        CEO-Founder at Camelia Bakery
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/son-nguyen.jpeg" alt="" class="avatar-new">
-                      <span class="author">Son Nguyen</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Senior Software Engineer at KMS Technology
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/tien-le.jpeg" alt="" class="avatar-new">
-                      <span class="author">Tien Le</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        UI/UX at KMS Technology
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- End testimonial item -->
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
-          
-        </div> -->
-          </div>
-        </div>
-      </div>
-    </div><!-- End Testimonials Section -->
-
-    <!-- ======= Blog Section ======= -->
-    <!-- <section id="blog" class="blog-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Blog
-              </h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Travel</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/logo-group.png" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Web Design</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/logo-group.png" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Web Design</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/logo-group.png" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End Blog Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
-      style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Send Message Us
-                      </h5>
-                    </div>
-                    <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message"
-                                required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
-                        expedita aperiam aliquid at.
-                        Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
-                        mollitia inventore?
-                      </p>
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> 9, 7 Street , Linh Chieu, Thu Duc City, Ho Chi Minh
-                          City,
-                          VN</li>
-                        <li><span class="bi bi-phone"></span> (+84)976845321</li>
-                        <li><span class="bi bi-envelope"></span> npp.nguyentuan@gmail.com</li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
-            <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-            -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-          </div>
-        </div>
+      <div class="card-project">
+        <img src="public/playground_assets/bitcoin.png" alt="Rectangle91137" class="image-project" />
+        <img src="public/playground_assets/bg-services.png" alt="Rectangle301138" class="image-bg-project" />
+        <span class="text-project headerH3•Bold">
+          <span>Crypto Currencies Wallets Apps</span>
+        </span>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </section>
+  <!-- End Services Section -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <!-- Start About Section -->
+  <section id="about" class="about-mf sect-pt4 route">
+    <div style="background-image: url('public/playground_assets/bg-about.png');" class="container-about">
+      <div style="background-image: url('public/playground_assets/bg-about-left.png');" class="container-about-left">
+        <img src="public/playground_assets/logo-black.svg" alt="ATGroup1245" class="image-logo" />
+      </div>
+      <div class="container-about-right">
+        <span class="text-about-title headerH2•Bold"><span>About</span></span>
+        <div class="frame-about-info">
+          <span class="text-about bodyM•Regular">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nullam sapien puru, condimentum cursus bibendum quis, laoreet
+            ut nisi. Maecenas eget faucibus velit. Nunc posuere mi elit,
+            ac alq.
+            Proin dictum pulvinar eros, eleifend ornare mauris accumsan
+            sit amet. Fusce fringilla efficitur sollicitudin. Maecenas
+            eget faucib.
+            Nunc iaculis non turpis nec varius. Aliquam nunc libero,
+            iaculis eget enim eget, ornare pellentesque eros. Sed
+            tincidunt sapien at mi sodales hendrerit. Aliquam erati.
+          </span>
+        </div>
+        <button class="button-discover">
+          <span class="text-button-discover"><span>Discover more</span></span>
+          <img src="public/playground_assets/icon-left.svg" class="icon-button-discover" />
+        </button>
+      </div>
+    </div>
+    <!-- <div class="home-group75">
+      <img src="public/playground_assets/rectangle31192-r2ir-600h.png" alt="Rectangle31192" class="home-rectangle3" />
+      <img src="public/playground_assets/atgroup1193-v0w.svg" alt="ATGroup1193" class="home-a-t-group1" />
+    </div> -->
+  </section>
+  <!-- End About Section -->
+
+  <!-- Start Work Section -->
+  <section id="work" class="portfolio-mf sect-pt4 route">
+    <div class="container-project">
+      <div class="text-project-title headerH2•Bold">Projects</div>
+      <div class="text-project-sub-title bodyM•Regular">Our success stories through every project</div>
+
+      <div class="container-project-list">
+
+        <div class="container-project-item">
+          <img src="public/playground_assets/crypto.png" class="image-project-item" />
+          <div class="text-title-project-item headerH3•Bold">
+            Crypto
+          </div>
+          <div class="text-sub-title-project-item bodyM•Regular">
+            Lorem ipsum dolor sit amet, consecte tur adipiscing
+            elituspendisse anaboor
+          </div>
+        </div>
+
+        <div class="container-project-item">
+          <img src="public/playground_assets/fintech.png" alt="Rectangle151153" class="image-project-item" />
+          <div class="text-title-project-item headerH3•Bold">Fintech</div>
+          <div class="text-sub-title-project-item bodyM•Regular">
+            Lorem ipsum dolor sit amet, consecte tur adipiscing
+            elituspendisse anaboor
+          </div>
+        </div>
+
+        <div class="container-project-item">
+          <img src="public/playground_assets/banking.png" class="image-project-item" />
+          <div class="text-title-project-item headerH3•Bold">Banking</div>
+          <div class="text-sub-title-project-item bodyM•Regular">
+            Lorem ipsum dolor sit amet, consecte tur adipiscing
+            elituspendisse anaboor
+          </div>
+        </div>
+      </div>
+      <div class="container-project-list">
+
+        <div class="container-project-item">
+          <img src="public/playground_assets/logistic.png" alt="Rectangle151153" class="image-project-item" />
+          <div class="text-title-project-item headerH3•Bold">Logistic</div>
+          <div class="text-sub-title-project-item bodyM•Regular">
+            Lorem ipsum dolor sit amet, consecte tur adipiscing
+            elituspendisse anaboor
+          </div>
+        </div>
+        <div class="container-project-item">
+          <img src="public/playground_assets/health-care.png" alt="Rectangle151153" class="image-project-item" />
+          <div class="text-title-project-item headerH3•Bold">HealthCare</div>
+          <div class="text-sub-title-project-item bodyM•Regular">
+            Lorem ipsum dolor sit amet, consecte tur adipiscing
+            elituspendisse anaboor
+          </div>
+        </div>
+        <div class="container-project-item">
+          <img src="public/playground_assets/entertaiment.png" alt="Rectangle151153" class="image-project-item" />
+          <div class="text-title-project-item headerH3•Bold">Entertainment</div>
+          <div class="text-sub-title-project-item bodyM•Regular">
+            Lorem ipsum dolor sit amet, consecte tur adipiscing
+            elituspendisse anaboor
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container-values">
+        <div class="text-values-title headerH2•Bold">We Bring Value</div>
+
+        <div class="container-values-real">
+          <div class="container-values-item">
+            <div class="text-values-item-title">450+</div>
+            <div class="text-values-item-sub-title">works completed</div>
+          </div>
+
+          <div class="container-values-item">
+            <div class="text-values-item-title">2+</div>
+            <div class="text-values-item-sub-title">total clients</div>
+          </div>
+
+          <div class="container-values-item">
+            <div class="text-values-item-title">8+</div>
+            <div class="text-values-item-sub-title">years of experience</div>
+          </div>
+
+
+          <div class="container-values-item">
+            <div class="text-values-item-title">4+</div>
+            <div class="text-values-item-sub-title">award won</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Work Section -->
+
+  <!-- Start Team Section  -->
+  <!-- End Team Section -->
+
+
+  <span class="home-text039 bodyM•Regular">
+    <span>
+      One tree cannot amount to anything, three of them together can
+      look like a mountain.
+    </span>
+  </span>
+
+  <span class="home-text045 headerH2•Bold">
+    <span>Core Members</span>
+  </span>
+  <!-- <img src="public/playground_assets/rectangle131145-3vbn-600h.png" alt="Rectangle131145" class="home-rectangle13" /> -->
+
+  <div class="home-group34">
+    <img src="public/playground_assets/rectangle261198-12bk-400w.png" alt="Rectangle261198" class="home-rectangle26" />
+    <div class="home-group3">
+      <img src="public/playground_assets/oval31201-n5j-200h.png" alt="Oval31201" class="home-oval3" />
+      <span class="home-text088 headerH3•Bold">
+        <span>Hung Nguyen</span>
+      </span>
+      <span class="home-text090 bodyM•Regular">
+        <span>Software Engineer</span>
+      </span>
+      <span class="home-text092 bodyM•Regular">
+        <span>React Native Lead at Brickmate VN</span>
+      </span>
+    </div>
+  </div>
+  <div class="home-group35">
+    <img src="public/playground_assets/rectangle261206-lm2-400w.png" alt="Rectangle261206" class="home-rectangle261" />
+    <div class="home-group31">
+      <img src="public/playground_assets/oval21209-4r79-200h.png" alt="Oval21209" class="home-oval2" />
+      <span class="home-text094 headerH3•Bold">
+        <span>Tuan Anh Nguyen</span>
+      </span>
+      <span class="home-text096 bodyM•Regular">
+        <span>Founder of AT Group</span>
+      </span>
+      <span class="home-text098 bodyM•Regular">
+        <span>Technical Lead at KMS Technology</span>
+      </span>
+    </div>
+  </div>
+  <div class="home-group36">
+    <img src="public/playground_assets/rectangle261214-05ql-400w.png" alt="Rectangle261214" class="home-rectangle262" />
+    <div class="home-group32">
+      <img src="public/playground_assets/oval31217-vgqr-200h.png" alt="Oval31217" class="home-oval31" />
+      <span class="home-text100 headerH3•Bold">
+        <span>Son Minh Nguyen</span>
+      </span>
+      <span class="home-text102 bodyM•Regular">
+        <span>Software Engineer</span>
+      </span>
+      <span class="home-text104 bodyM•Regular">
+        <span>SSE at KMS Technology</span>
+      </span>
+    </div>
+  </div>
+  <span class="home-text106 bodyM•Regular">
+    <span>
+      Whether you have any questions or want to explore how we can help
+      you, leave us a message and we will get back to you shortly.
+    </span>
+  </span>
+  <span class="home-text108 headerH2•Bold">
+    <span>Get in Touch</span>
+  </span>
+  <div class="home-textfield-textarea-normal-false">
+    <span class="home-text110 bodyM•Regular"><span>Message</span></span>
+  </div>
+  <div class="home-group43">
+    <span class="home-text112 bodyM•Regular">
+      <span>Full Name</span>
+    </span>
+  </div>
+  <div class="home-group44">
+    <span class="home-text114 bodyM•Regular"><span>Email</span></span>
+  </div>
+  <div class="home-group41">
+    <img src="public/playground_assets/rectangle451238-jp4i-200h.png" alt="Rectangle451238" class="home-rectangle45" />
+    <div class="home-frame22">
+      <span class="home-text116 bodyS•Medium">
+        <span>Subject</span>
+      </span>
+    </div>
+    <span class="home-text118">|</span>
+  </div>
+  <div class="home-group51">
+    <img src="public/playground_assets/rectangle341243-6e4e-200h.png" alt="Rectangle341243" class="home-rectangle341" />
+    <img src="public/playground_assets/rectangle271244-kv2-700h.png" alt="Rectangle271244" class="home-rectangle27" />
+    <img src="public/playground_assets/atgroup1245-is0d.svg" alt="ATGroup1245" class="home-a-t-group2" />
+    <div class="home-frame32">
+      <div class="home-frame23">
+        <div class="home-icon"><span class="home-text119"></span></div>
+        <span class="home-text120 bodyM•Regular">
+          <span>
+            9, Street 7, Linh Chieu, Thu Duc City, Ho Chi Minh City,
+            Vietnam
+          </span>
+        </span>
+      </div>
+      <div class="home-frame24">
+        <div class="home-icon1">
+          <span class="home-text122"></span>
+        </div>
+        <span class="home-text123 bodyM•Regular">
+          <span>(+84)976845321</span>
+        </span>
+      </div>
+      <div class="home-frame25">
+        <div class="home-icon2">
+          <span class="home-text125"></span>
+        </div>
+        <span class="home-text126 bodyM•Regular">
+          <span>npp.nguyentuan@gmail.com</span>
+        </span>
+      </div>
+    </div>
+    <span class="home-text128">
+      <span>
+        Copyright ©2022 AT Group Vietnam. All rights reserved.
+      </span>
+    </span>
+    <img src="public/playground_assets/vector31257-ufud.svg" alt="Vector31257" class="home-vector3" />
+    <div class="home-frame29">
+      <span class="home-text130"><span>Company</span></span>
+      <div class="home-frame28">
+        <span class="home-text132 button•SemiBold">
+          <span>About</span>
+        </span>
+        <span class="home-text134 button•SemiBold">
+          <span>Projects</span>
+        </span>
+        <span class="home-text136 button•SemiBold">
+          <span>Achievements</span>
+        </span>
+        <span class="home-text138 button•SemiBold">
+          <span>Core Members</span>
+        </span>
+        <span class="home-text140 button•SemiBold">
+          <span>Contact</span>
+        </span>
+      </div>
+    </div>
+    <div class="home-frame31">
+      <span class="home-text142"><span>Services</span></span>
+      <div class="home-frame30">
+        <span class="home-text144 button•SemiBold">
+          <span>Web Development</span>
+        </span>
+        <span class="home-text146 button•SemiBold">
+          <span>Mobile Apps Development</span>
+        </span>
+        <span class="home-text148 button•SemiBold">
+          <span>Crypto Currencies Wallets Apps Developmentes</span>
+        </span>
+      </div>
+    </div>
+    <div class="home-icon3"><span class="home-text150"></span></div>
+    <div class="home-icon4"><span class="home-text151"></span></div>
+    <div class="home-icon5"><span class="home-text152"></span></div>
+    <button class="home-button">
+      <img src="public/playground_assets/ellipse13i125-db7-200h.png" alt="Ellipse13I125" class="home-ellipse13" />
+      <div class="home-icon6"><span class="home-text153"></span></div>
+    </button>
+  </div>
+  <button class="home-button1">
+    <span class="home-text154"><span>Get in Touch 1</span></span>
+  </button>
+  </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>
@@ -759,7 +534,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
